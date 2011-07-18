@@ -1,7 +1,5 @@
 /*	
-	This is an adaptation of http://en.wikipedia.org/wiki/XXTEA to lua	
-	for very simple encryption.
-	Lua part added by cbanta@gmail.com
+	This is libray of http://en.wikipedia.org/wiki/XXTEA for lua for very simple encryption.
 	
 	compile in gcc with
 		gcc --shared -fPIC -O2 -o xxtea.so xxtea.c
