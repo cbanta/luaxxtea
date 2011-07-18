@@ -1,0 +1,17 @@
+This is an adaptation of http://en.wikipedia.org/wiki/XXTEA to lua for very simple encryption.
+
+Compile in gcc with
+
+gcc --shared -fPIC -O2 -o xxtea.so xxtea.c
+
+Use in lua
+
+require'xxtea'
+str = 'something'
+key = 'abcd1234abcd1234'
+encstr = xxtea.encrypt( str, key )
+decstr = xxtea.decrypt( encstr, key )
+
+
+where the key is a 128 bit hex string
+
